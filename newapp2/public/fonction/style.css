@@ -1,0 +1,326 @@
+body{background-color: #202315;background-image: url(../img/header3.jpg);background-size: 100%;background-repeat: no-repeat;margin: 0; padding: 0; background-position: 50% 0%;}
+.container{margin:0; padding: 0;}
+*{outline: none;}
+.row{margin: 0; padding: 0;}
+a:hover{text-decoration: none;}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+ /* Div image entete site */
+.header{width: 100%;height: 350px;background:transparent;background-size: 100% 110%;}
+
+#number-commentaires2{float: right; margin-top: -47px; margin-right: 2px; color: white;}
+#number-commentaires{position: absolute; margin-top: -70px; margin-right: 0px;}
+
+#boutton-précédent{background-color:rgb(199,211,29); padding: 5px; color: rgb(36, 64, 46); font-weight: bold; transition-duration: .4s;}
+#boutton-précédent:hover{ color: white; background-color: rgb(36, 64, 46); }
+
+
+/*// NAV SUR MOBILE    CSS DEGUELASSE //*/
+#mobileButton{visibility: hidden;}
+#mobileNav{visibility: hidden; width: 0; display: none;}
+.liens{font-size: 1.5em; color: white;}
+.cache{animation-name: pageMobileHidden; animation-duration: .7s; animation-fill-mode: forwards;}
+.visible{animation-name: pageMobile; animation-duration: .7s; animation-fill-mode: forwards;}
+
+
+#mobileNav:before{display: none; visibility: hidden;}
+#mobileNav:after{display: none; visibility: hidden;}
+
+@media screen and (max-width: 768px){
+@keyframes pageMobile{
+	0%{margin-left: -70%; border-right: 0px solid rgb(199,211,29);}
+	100%{margin-left: 0%; border-right: 3px solid rgb(199,211,29);}
+}
+@keyframes pageMobileHidden{
+	0%{margin-left: 0%; border-right: 3px solid rgb(199,211,29);}
+	100%{margin-left: -70%; border-right: 0px solid rgb(199,211,29);}
+}
+#mobileNav{position:fixed; width:100% !important; height: 50px; background-color: rgba(0,0,0,0.9);top: 0px; left: 0px; color: white; visibility: visible; padding: 0; margin:0; font-size: 18px;  display: block; z-index: 999;}
+#mobileButton{position: absolute;right: 10px;color: white; height: 30px; width: 35px !important; z-index: 10001; visibility: visible; width: 80px; font-size: 35px; top: 10px; text-decoration: none;}
+#navmobile{position: fixed;top: 0; left: 0;height: 100%; width: 70%; background-color: rgba(0,0,0,1); z-index: 1000; overflow: hidden; text-align: center;visibility: visible;overflow: hidden; border-right: 0px solid rgb(199,211,29);}
+.hidden{width: 70%; margin-left: -70%}
+.cache{animation-name: pageMobileHidden; animation-duration: .5s; animation-fill-mode: forwards;}
+.visible{animation-name: pageMobile; animation-duration: .5s; animation-fill-mode: forwards;}
+}
+@media screen and (max-width: 768px){
+	#nav{visibility: hidden;}
+	.header{height: 200px;}
+	#colonneGauche{visibility: hidden; display: none;}
+}
+
+#pseudoNavMobile{color: white; font-size: 20px; margin-top: 10px; margin-bottom: 15px;}
+#rowMobile{ background-color: rgb(199,211,29); padding-bottom: 10px; margin-bottom: 30px;}
+#rowMobile a{color: white; text-decoration: none;}
+
+#liensNavMobile{color: white; font-size: 1.5em;}
+/*// FIN NAV SUR MOBILE    CSS DEGUELASSE //*/
+
+@media screen and (max-width: 768px){
+	.navbar{visibility: hidden;}
+}
+
+.navbar{background: rgba(0,0,0,0.9)!important;}
+
+/*Page Home*/
+
+#categorie {border: 2px solid black;border-radius: 10px;}
+
+#categorie_titre {color: #BB0B0B;}
+
+/* Page cat */
+
+#grostitre_cat {border-left: 2px solid black;border-bottom-left-radius: 10px;border-bottom: 2px solid black;color: #BB0B0B;font-family: 'Indie Flower', cursive;}
+
+#fond-article{background-color: white; outline: 20px solid rgba(0,0,0,0.7); padding-bottom: 10px; min-height: 1000px;}
+
+#logoNav{margin-top: -10px;}
+
+#titre-actu-accueil{padding: 10px; color:rgb(36, 64, 46); margin-bottom: 30px;border-bottom: 5px solid rgb(199,211,29); font-size: 35px; font-weight: bold;}
+#image-actu-accueil{overflow: hidden; margin-bottom: 40px;}
+#image-actu-accueil img{width: 100%; height:220px; border-bottom: 5px solid rgb(199,211,29);}
+@media screen and (max-width: 568px){
+	#image-actu-accueil img{width: 100%; height:160px; border-bottom: 5px solid rgb(199,211,29);}
+}
+#text-actu-accueil{position: absolute; z-index: 2; bottom: -85px; background-color: rgba(0,0,0,0.7); right: 15px; left: 15px; padding-left: 10px; padding-right: 10px; transition-duration: .5s; cursor : pointer;}
+#text-actu-accueil h2{font-size: 18px; margin-top: 15px; margin-bottom: -5px; padding-right: 15px;}
+#text-actu-accueil h2 a{color:rgb(199,211,29); text-decoration: none;}
+#text-actu-accueil h4{font-size: 10px; color: lightgrey;}
+#text-actu-accueil p{ color: white; font-size: 15px;}
+#text-actu-accueil div{min-height: 75px;}
+#text-actu-accueil p a{color:rgb(199,211,29); }
+#image-actu-accueil:hover #text-actu-accueil{ bottom: 0px; }
+
+
+#titre-actu-accueil-recent{padding: 10px; color:rgb(36, 64, 46); margin-bottom: 10%;border-bottom: 5px solid rgb(199,211,29); font-size: 25px; font-weight: bold; margin-top: 12px;}
+#colonne-actu-recent{padding-bottom:0px;background: #0e0e0e; /* Old browsers */
+background: -moz-linear-gradient(left, #0e0e0e 0%, #4e5c5a 0%, #8ea6a2 0%, #000000 0%, #aaaaaa 0%, #ffffff 6%, #ffffff 8%, #ffffff 78%, #ffffff 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #0e0e0e 0%,#4e5c5a 0%,#8ea6a2 0%,#000000 0%,#aaaaaa 0%,#ffffff 6%,#ffffff 8%,#ffffff 78%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #0e0e0e 0%,#4e5c5a 0%,#8ea6a2 0%,#000000 0%,#aaaaaa 0%,#ffffff 6%,#ffffff 8%,#ffffff 78%,#ffffff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ margin-top: 30px; box-shadow: 8px 8px 20px black;}
+#colonne-actu-recent .col-md-12{padding: 0px; margin: 0px; margin-bottom: 4.5%;}
+#colonne-actu-recent div div{min-height: 100px; margin-bottom: 10px;}
+#colonne-actu-recent div div img{width: 100%; height: 100px !important; transition-duration: .3s;}
+#colonne-actu-recent div div img:hover{box-shadow: 1px 1px 15px black;}
+#titre-recent{margin-top: -45px; text-align: center; background-color: rgba(0,0,0,0.7); display: block; z-index: 100; position: absolute; left: 0px; right: 0px;bottom: 10px; padding-top: 5px; padding-bottom: 5px; color:rgb(199,211,29); }
+
+
+.fixedActu{position: fixed; top: 30px; right: 8.3%; left: 75%; padding: 15px; padding-top: 0px; padding-bottom: -10px;}
+.fixedActuBot{position:absolute; top: 0px; right: 8.3%;left: 75%; padding: 15px; padding-top: 0px; padding-bottom: -10px;}
+
+#titre-Forum-accueil-recent{padding: 10px; color:rgb(36, 64, 46); margin-bottom: 10%;border-bottom: 5px solid rgb(199,211,29); font-size: 20px; font-weight: bold; margin-top: 12px;}
+#colonne-Forum-recent{padding-bottom:0px;background: #0e0e0e; /* Old browsers */
+background: -moz-linear-gradient(left, #0e0e0e 0%, #4e5c5a 0%, #8ea6a2 0%, #000000 0%, #aaaaaa 0%, #ffffff 6%, #ffffff 8%, #ffffff 78%, #ffffff 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #0e0e0e 0%,#4e5c5a 0%,#8ea6a2 0%,#000000 0%,#aaaaaa 0%,#ffffff 6%,#ffffff 8%,#ffffff 78%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #0e0e0e 0%,#4e5c5a 0%,#8ea6a2 0%,#000000 0%,#aaaaaa 0%,#ffffff 6%,#ffffff 8%,#ffffff 78%,#ffffff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ margin-top: 30px; box-shadow: 8px 8px 20px black;}
+#colonne-Forum-recent a{color: rgb(199,211,29); font-size: 20px;}
+#colonne-Forum-recent h5{color: darkgrey; font-size: 12px; margin-top: -8px;}
+#colonne-Forum-recent div{padding-bottom: 5px; border-bottom: 3px solid rgb(199,211,29);}
+#colonne-Forum-recent h4{max-height: 25px; overflow: hidden;}
+
+.fixedForum{position: fixed; top: 30px; right: 8.3%; left: 75%; padding: 15px; padding-top: 0px; padding-bottom: -10px;}
+.fixedForumBot{position:absolute; top: 0px; right: 8.3%;left: 75%; padding: 15px; padding-top: 0px; padding-bottom: -10px;}
+
+
+
+
+
+.actu{color: rgb(36, 64, 46); border-bottom: 4px solid rgb(199,211,29); background-color:white !important; padding: 10px; font-weight: bold;
+}
+
+
+@media screen and (max-width: 968px){
+	#colonne-actu-recent{display: none;}
+	#colonne-inscrit-recent{display: none;}
+	#colonne-Forum-recent{display: none !important;}
+}
+
+
+#colonne-inscrit-recent{margin-top: 30px;}
+#inscrit-recent{text-align: center; color:rgb(36, 64, 46); border-bottom: 2px solid rgb(36, 64, 46); color:rgb(36, 64, 46); margin-bottom: 15px; font-weight: bold; padding-bottom: 10px; margin-top: -10px;}
+#colonne-inscrit-recent h6{font-size: 20px; font-weight: bold; color: rgb(199,211,29); margin-bottom: 15px;}
+
+#grosArticle{background-color: rgba(255,255,255,1); outline: 20px solid rgba(0,0,0,0.7); padding-bottom: 20px; height: auto;}
+#grosArticle img{width: 100%;}
+#grostitre_article {text-align: center;margin-top: 0px;color:   rgb(36, 64, 46);font-family: 'Ubuntu Mono', monospace;background-color: white;padding: 15px;font-size: 3.5em;border-bottom: 6px solid  rgba(199,211,29,1);margin-bottom: 0px;font-weight: bold;}
+.texteGrosArticle{width: 100%;text-align: left;background-color: white;padding: 15px;margin-bottom: 10px;color: black;font-family: 'Ubuntu Mono', monospace;font-size: 18px;border-top: 6px solid  rgba(199,211,29,1);}
+.texteGrosArticle h6{color: grey;}
+.texteGrosArticle p img{width: 100% !important;height: auto !important;}
+.texteGrosArticle p img{cursor: pointer;}
+.texteGrosArticle ul{list-style-image: url(/img/liste.png);}
+#large {display: none;position: fixed;background: transparent;z-index: 10000;height: 0%;width: 0%;color: #336699;display: flex;justify-content: center;align-content: center;align-items: center;}
+#large img{border: 10px solid white;max-width: 95%;max-height: 95%;}
+#background{display: none;position: fixed;height: 100%;width: 100%;top: 0;left: 0;background: #000000;z-index: 10000;}
+.commentaireTexte{margin-top:80px; margin-bottom: 30px;}
+.commentaireTexte h2{color: white; }
+.commentaire{background-color: white; margin-top: 30px; padding-left: 2%;padding-right: 2%; padding-bottom: 30px; margin-bottom: 20px;}
+.commentaire img{max-width: 100%;}
+.commentaire h4{color:rgb(36, 64, 46);font-family: 'Ubuntu Mono', monospace; background-color: rgba(255,255,255,1); padding: 10px; border-bottom:6px solid  rgb(199,211,29); font-weight: bold; font-size: 30px;}
+.commentairePersonne{border-left:3px solid  rgb(199,211,29); padding-left: 10px; padding-right: 10px; margin-top: 30px;}
+.commentairePersonne h5{color:rgb(36, 64, 46);font-family: 'Ubuntu Mono', monospace; font-size: 20px; font-weight: bold;}
+.commentairePersonne div p img{max-width: 100%; cursor: pointer;}
+
+
+#titre_log{text-align: center; color: white;font-family: 'Ubuntu Mono', monospace;}
+.log{background-color: rgba(0,0,0,0.9); margin-bottom: 200px;}
+.formLogin{margin-bottom: 30px; padding: 20px;}
+.formLogin input{text-align: center;}
+.buttonLogin{width: 40%; margin-left: 30%; margin-top: 30px; background-color:rgb(199,211,29); color: white; font-size: 20px;border:none; font-weight: bold; padding: 5px; transition-duration: .5s; }
+.buttonLogin:hover{background-color: rgba(40, 125, 44, 1); }
+
+
+
+#inscription{background-color: rgba(0,0,0,0.9); margin-bottom: 200px; padding: 20px; text-align: center;}
+#inscription h2{color: rgb(199,211,29); margin-bottom: 50px;}
+#inscription input{margin-bottom: 30px; width: 100%; text-align: center;}
+#inscription h3{color: white; font-size: 18px;}
+#inscription button{width: 40%; margin-left: 0%; margin-top: 30px; background-color:rgb(199,211,29); color: white; font-size: 20px;border:none; font-weight: bold; padding: 5px; transition-duration: .5s; }
+#inscription button:hover{background-color: rgba(40, 125, 44, 1);}
+
+
+#hello_admin {color: lightgrey;font-family: 'Indie Flower', cursive;}
+#zoneAdmin{background-color: rgba(0,0,0,0.9); margin-bottom: 200px; padding: 20px; text-align: center; color: white;}
+#titre_admin{margin-bottom: 80px;font-family: 'Ubuntu Mono', monospace;}
+#titre_admin h1{font-family: 'Ubuntu Mono', monospace; font-size: 3.5em; border-bottom:6px solid  rgb(199,211,29); padding-bottom: 10px;}
+.description{color:rgb(199,211,29);font-family: 'Ubuntu Mono', monospace; font-size: 20px; border: none;}
+#buttonAction{background-color:rgb(199,211,29); padding: 8px; color: white; font-weight: bold;font-size: 20px; text-decoration: none;}
+.action{font-size: 20px; margin-top: 15px;}
+
+
+
+.easyPaginateNav{margin-bottom: 20px; margin-top: 10px; text-align: center; background-color:rgb(199,211,29); padding-top: 5px; padding-bottom: 5px; margin-left: 15px;margin-right: 15px; }
+.easyPaginateNav a{font-size: 12px;  border: 0px solid rgb(36, 64, 46); padding: 5px; margin: 5px; text-decoration: none; color:rgb(36, 64, 46); transition-duration: .5s;padding-right: 10px; padding-left: 10px;font-weight: bold; }
+.easyPaginateNav a:active{background-color:rgb(36, 64, 46);}
+.easyPaginateNav a:focus{background-color:rgb(36, 64, 46); color: white;box-shadow: 0px 0px 20px green;}
+.easyPaginateNav a:hover{background-color:rgb(36, 64, 46); color: white; box-shadow: 0px 0px 20px green;}
+
+footer{width: 100%; margin-top: 50px; background-color: rgba(0,0,0,0.9);}
+
+
+
+
+
+/* Page utilisateurs */
+
+#pagePerso{background-color: rgba(0,0,0,0.8); padding: 30px; color: white; min-height: 600px;}
+#imageProfilPerso{ padding: 0;}
+#imageProfilPerso img{width: 100%;border: 2px solid rgb(199,211,29);}
+
+#imageProfilPersoCommentaire{ padding: 0;margin-right: 10px;}
+#imageProfilPersoCommentaire img{width: 100%;border: 2px solid rgb(199,211,29);}
+
+
+
+@keyframes formMailVisible{
+	0%{height: 0px;}
+	100%{height: 30px;}
+}
+@keyframes formMailHidden{
+	0%{height: 30px;}
+	100%{height: 0px;}
+}
+
+#formMail{width: 100%; overflow: hidden;}
+.formMailHidden{height: 0px;}
+.formMailCache{animation-name: formMailHidden; animation-duration: .5s; animation-fill-mode: forwards;}
+.formMailVisible{animation-name: formMailVisible; animation-duration: .5s; animation-fill-mode: forwards; animation-timing-function: linear;}
+
+#infoProfil{color: rgb(199,211,29);}
+#buttonFormMail{background-color:rgb(199,211,29); border: none; margin-bottom: 5px; height: 26px; }
+
+@keyframes formImageVisible{
+	0%{height: 0px;}
+	100%{height: 300px;}
+}
+@keyframes formImageHidden{
+	0%{height: 300px;}
+	100%{height: 0px;}
+}
+#buttonFormImage{background-color:rgb(199,211,29); border: none; margin-bottom: 20px; height: 26px; width: 100%;}
+#formImage{width: 100%; overflow: hidden;}
+.formImageHidden{height: 0px;}
+.formImageCache{animation-name: formImageHidden; animation-duration: .5s; animation-fill-mode: forwards;}
+.formImageVisible{animation-name: formImageVisible; animation-duration: .5s; animation-fill-mode: forwards; animation-timing-function: linear;}
+
+#profilInfoPerso{margin-top: 50px;}
+#profilInfoPerso h6{font-size: 1.3em}
+
+
+@keyframes formPasswordVisible{
+	0%{height: 0px;}
+	100%{height: 150px;}
+}
+@keyframes formPasswordHidden{
+	0%{height: 150px;}
+	100%{height: 0px;}
+}
+
+#formPassword{width: 100%; overflow: hidden;}
+#formPassword input{color: black;}
+.formPasswordHidden{height: 0px;}
+.formPasswordCache{animation-name: formPasswordHidden; animation-duration: .5s; animation-fill-mode: forwards;}
+.formPasswordVisible{animation-name: formPasswordVisible; animation-duration: .5s; animation-fill-mode: forwards; animation-timing-function: linear;}
+
+#imageNav{border-radius: 0px; width: 40px; margin-top: -15px; margin-bottom: -15px; margin-right: 10px;}
+
+
+/* CSS boutton scroll haut de pagge */
+
+#scrollUpa{position: absolute; left: -10px; bottom: 100px; z-index: 10}
+.fixedTop{position: fixed; right: 0px; bottom: 200px;}
+
+@media screen and (max-width: 768px){
+	#scrollUp{width: 60px;height: 70px; bottom: 15px; z-index: 1;  }
+}
+
+
+/* CSS footer */
+
+#footerArticle h6{color: rgb(199,211,29); font-size: 1.5em; padding-left: 20px;}
+#footerArticle a{font-size: 0.8em; color:rgb(199,211,29); }
+#titreFooter{font-size: 1.1em !important; text-decoration: none; color: white !important; font-weight: bold;}
+.extraitFooter{margin-top: 0px; padding-left: 5px; border-left: 3px solid rgb(199,211,29);}
+.extraitFooter p{margin-bottom: 5px; color: grey; font-size: 12px;}
+
+#footerNavigation{text-align: center;}
+#footerNavigation h6{color: rgb(199,211,29); font-size: 1.5em; padding-left: 20px;}
+#footerNavigation a{color: white;}
+
+#footerAPropos h6{color: rgb(199,211,29); font-size: 1.5em; padding-left: 20px; text-align: center;}
+
+#footerMentions{background-color: rgba(199,211,29,0.5); text-align: center; padding-top: 10px; margin-top: 10px; color: white;}
+
+.buttonComDelete{background-color:rgb(199,211,29); color: white; font-size: 20px;border:none; font-weight: bold;}
+.formComDelete{float: right;}
+
+
+/* CSS forum --------------------------------------------------- */
+
+@media screen and (max-width: 768px){
+#deleteSujetForum{display: none;}
+}
+
+#zoneForum{background: white; min-height: 800px; padding-bottom: 20px;}
+#zoneForum div h1{color:rgb(36, 64, 46); font-weight: bold;}
+.titleForum{ padding-bottom: 10px;}
+.categoryForum{background: rgba(199,211,29,1); height: 50px; margin-bottom: 5px; padding: 5px;}
+@media screen and (max-width: 568px){
+	.categoryForum{background: rgba(199,211,29,1); height: 70px; margin-bottom: 5px;}
+}
+.categoryForum h4{color: white; font-size: 15px; margin-top: 15px;}
+
+#sujetForum{color:rgb(36, 64, 46); font-size: 20px;}
+.sousCategoryForum{background: white;}
+.descriptionSujet{color: grey; font-size: 13px; margin-top: -5px;}
+#borderSujetForum{border-bottom: 2px solid rgba(199,211,29,1); width: 100%; margin-bottom: 5px;}
+
+#sujetCreatForum{background: rgb(36, 64, 46); padding: 10px; margin-top: 20px; border:none; margin-bottom: 15px;  transition-duration: .4s;}
+#sujetCreatForum a{color: white;}
+#sujetCreatForum:hover{background-color:  rgba(199,211,29,1);box-shadow: 0px 0px 10px rgb(36, 64, 46);}
+
+#topComment{ background: rgba(199,211,29,1);}
+
+
+#buttonActionForum{background-color: rgb(36, 64, 46);border: none;font-size: 20px;color: white;transition-duration: .4s;}
+#buttonActionForum:hover{background-color:  rgba(199,211,29,1);box-shadow: 0px 0px 10px rgb(36, 64, 46);}
+
+#selectAdmin{color: black;}
